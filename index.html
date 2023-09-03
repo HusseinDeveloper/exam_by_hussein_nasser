@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/stayle.css" />
+  </head>
+  <body>
+
+    <div id="loading" >
+      <div class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+      </div>
+    </div>
+
+
+    <div class="left-nav  bg-black position-fixed top-0 d-flex vh-100">
+      <div class="side-nav d-flex flex-column justify-content-between p-4">
+        <div class="links">
+          <ul class="list-unstyled overflow-hidden text-white">
+           <li onclick="search()" class="py-2 position-relative cursor-pointer">Search</li>
+           <li onclick="catApi()" class="py-2 position-relative cursor-pointer">Categories</li>
+           <li onclick="getArea()" class="py-2 position-relative cursor-pointer">Area</li>
+           <li onclick="getIngredients()" class="py-2 position-relative cursor-pointer">Ingredients</li>
+           <li  onclick="showContacts()" class="py-2 position-relative cursor-pointer">Contact Us</li>
+          </ul>
+        </div>
+        <div class="button-nav">
+          <div class="icon text-white">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <div class="element text-white mb-5">
+            <p>Copyright Â© 2019 All Rights
+            <br>  Reserved.</p>
+          </div> 
+          </div> 
+        </div>
+          <div class="right-nav d-flex flex-column justify-content-between py-4 text-center px-2 bg-white text-black">
+            <img class="logo" src="./imgs/logo.png" alt="">
+
+            <i id="closeNav" class="fa-solid open-close-icon fa-2x fa-x cursor-pointer d-none "></i>
+            <i id="openNav" class="fa-solid fa-bars fs-2 cursor-pointer"></i>
+
+          <div>
+            <i class="fa-solid fa-globe d-block"></i>
+            <i class="fa-solid fa-share-nodes"></i>
+          </div>
+        </div>
+      </div>
+      <div class="container" >
+        <div class="row py-4 " id="Search">
+         
+        </div>
+      </div>
+
+      <div class="vh-100 position-relative">
+        <!-- <div class="position-absolute top-0 start-0 end-0 bottom-0 d-flex justify-content-center align-items-center">
+         <i class="fa fa-spinner fa-spin fa-5x"></i> 
+        </div> -->
+
+
+        <div class="container">
+          <div class="row py-5 g-4" id="rowData">
+            
+          </div>
+        </div>
+
+        
+      </div>
+
+    <script src="./js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
